@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Help The President Re-Unite America</title>
+<link href="/default.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="/jquery.collapse.css" type="text/css" />
+<!-- jquery core -->
+<script type="text/javascript" src="/js/jquery-1.6.1.min.js"></script>
+<!-- jquery plugins -->
+<!--<script type="text/javascript" src="jquery.cookie.min.js"></script>-->
+<script type="text/javascript" src="/js/jquery.collapsible.min.js"></script>
+<script type="text/javascript" src="/js/highlight.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	hljs.tabReplace = '    ';
+	hljs.initHighlightingOnLoad();
+	//custom animation for open/close
+	$.fn.slideFadeToggle = function(speed, easing, callback) {
+		return this.animate({opacity: 'toggle', height: 'toggle'}, speed, easing, callback);
+	};
+	//collapsible management
+	$('.collapsible').collapsible({
+		defaultOpen: 'section1',
+		cookieName: 'nav',
+		speed: 'slow',
+		animateOpen: function (elem, opts) { //replace the standard slideUp with custom function
+			elem.next().slideFadeToggle(opts.speed);
+		},
+		animateClose: function (elem, opts) { //replace the standard slideDown with custom function
+			elem.next().slideFadeToggle(opts.speed);
+		}
+	});
+	$('.page_collapsible').collapsible({
+		defaultOpen: 'body_section1',
+		cookieName: 'body2',
+		speed: 'slow',
+		animateOpen: function (elem, opts) { //replace the standard slideUp with custom function
+			elem.next().slideFadeToggle(opts.speed);
+		},
+		animateClose: function (elem, opts) { //replace the standard slideDown with custom function
+			elem.next().slideFadeToggle(opts.speed);
+		}
+	});
+	//assign open/close all to functions
+	function openAll() {
+		$('.collapse-close').collapsible('toggle');
+	}
+	function closeAll() {
+		$('.collapse-open').collapsible('toggle');
+	}
+	//listen for close/open all
+	$('#closeAll').click(function(event) {
+		event.preventDefault();
+		closeAll();
+	});
+	$('#openAll').click(function(event) {
+		event.preventDefault();
+		openAll();
+	});
+});
+</script>
+</head>
+
+<body>
+<div class="container">
+	<div class="header"><a href="/index.html"><img src="/images/spacer.gif" width="167" height="167" style="position: relative; top: 28px; left: 603px;" /></a></div>
+	<div class="nav">
+    		<ul id="whatB">
+    			<li id="who"><a href="/who/index.html"></a></li>
+    			<li id="what"><a href="/what/vote.html"></a></li>
+    			<li id="why"><a href="/why/index.html"></a></li>
+    			<li id="how"><a href="/how/index.html"></a></li>
+    			<li id="blog"><a href="http://www.facebook.com/ObamaSuperPac" target="_blank"></a></li>
+    		</ul>
+    </div>
+	<div class="content">
+		<div class="horizontalDivider"></div>
+		<div class="contentDiv">
+			<div class="content574L">
+				<div class="page_collapsible" id="body_section2" style="background-image: url(/images/title569_BehindVideo.png);"><span></span></div>			
+				<div>
+					<div class="content569box142H">
+						<div class="content569box260"></div>
+						<div class="content569box261"></div>
+					</div>
+					<!--
+					<div class="content569box142H">
+						<div class="content569box260"><img src="/images/spacer_0d4e96.gif" width="260" height="142" /></div>
+						<div class="content569box261">
+						<span class="font1">Left in the Snow</span><br />
+						<strong>Campaign</strong>: "No One Gets Left Behind"<br />
+						<div class="horizontalDivider10px"></div>
+						Ancient civilizations left their weak and elderly behind when their tribe migrated. America has always taken care of its own.
+						<div class="horizontalDivider10px"></div>
+						<a href="#" class="videoButton" target="_blank">Video</a>
+						</div>
+					</div>
+					<div class="content569box142H">
+						<div class="content569box260"><img src="/images/spacer_0d4e96.gif" width="260" height="142" /></div>
+						<div class="content569box261">
+						<span class="font1">WWII Remembered</span><br />
+						<strong>Campaign</strong>: "No One Gets Left Behind"<br />
+						<div class="horizontalDivider10px"></div>
+						When Europe fell to Hitler's boot, America came to the rescue. America has never turned its back on its own.
+						<div class="horizontalDivider10px"></div>
+						<a href="#" class="videoButton" target="_blank">Video</a>
+						</div>
+					</div>
+					<div class="content569box142H">
+						<div class="content569box260"><img src="/images/spacer_0d4e96.gif" width="260" height="142" /></div>
+						<div class="content569box261">
+						<span class="font1">Wing Man</span><br />
+						<strong>Campaign</strong>: "No One Gets Left Behind"<br />
+						<div class="horizontalDivider10px"></div>
+						When Europe fell to Hitler's boot, America came to the rescue. America has never turned its back on its own.
+						<div class="horizontalDivider10px"></div>
+						<a href="#" class="videoButton" target="_blank">Video</a>
+						</div>
+					</div>
+					<div class="content569box142H">
+						<div class="content569box260"><img src="/images/spacer_0d4e96.gif" width="260" height="142" /></div>
+						<div class="content569box261">
+						<span class="font1">To the Rescue</span><br />
+						<strong>Campaign</strong>: "No One Gets Left Behind"<br />
+						<div class="horizontalDivider10px"></div>
+						In times of emergency, no matter who or where, we heed the call. Where would America be without our concern for others?
+						<div class="horizontalDivider10px"></div>
+						<a href="#" class="videoButton" target="_blank">Video</a>
+						</div>
+					</div>
+					-->
+				</div>
+				
+				<div class="horizontalDivider5px"></div>
+				<div class="page_collapsible" id="body_section1" style="background-image: url(/images/title569_BehindPrint.png);"><span></span></div>			
+				<div>
+					<div class="content569box124H">
+						<div class="content569box260"><img src="/images/print_behine_deal.jpg" width="260" height="124" /></div>
+						<div class="content569box261">
+						<span class="font1">Bad Deal</span><br />
+						<strong>Campaign</strong>: "No One Gets Left Behind"<br />
+						<div class="horizontalDivider10px"></div>
+						America has never been about "every man for himself."
+						<div class="horizontalDivider10px"></div>
+						<a href="https://www.facebook.com/photo.php?fbid=421669654551778&set=a.421669317885145.108512.260941977291214&type=3&theater" class="printButton" target="_blank">Print</a>
+						</div>
+					</div>
+					<div class="content569box124H">
+						<div class="content569box260"><img src="/images/print_behine_child.jpg" width="260" height="124" /></div>
+						<div class="content569box261">
+						<span class="font1">Hungry Child</span><br />
+						<strong>Campaign</strong>: "No One Gets Left Behind"<br />
+						<div class="horizontalDivider10px"></div>
+						It takes a nation to raise a child.
+						<div class="horizontalDivider10px"></div>
+						<a href="https://www.facebook.com/photo.php?fbid=421669657885111&set=a.421669317885145.108512.260941977291214&type=3&theater" class="printButton" target="_blank">Print</a>
+						</div>
+					</div>
+					<div class="content569box124H">
+						<div class="content569box260"><img src="/images/print_behine_without.jpg" width="260" height="124" /></div>
+						<div class="content569box261">
+						<span class="font1">Be Without</span><br />
+						<strong>Campaign</strong>: "No One Gets Left Behind"<br />
+						<div class="horizontalDivider10px"></div>
+						When did we stop sharing each other's pain?
+						<div class="horizontalDivider10px"></div>
+						<a href="https://www.facebook.com/photo.php?fbid=421669664551777&set=a.421669317885145.108512.260941977291214&type=3&theater" class="printButton" target="_blank">Print</a>
+						</div>
+					</div>
+					<div class="content569box124H">
+						<div class="content569box260"><img src="/images/print_behine_decisions.jpg" width="260" height="124" /></div>
+						<div class="content569box261">
+						<span class="font1">Bad Decisions</span><br />
+						<strong>Campaign</strong>: "No One Gets Left Behind"<br />
+						<div class="horizontalDivider10px"></div>
+						Too small to survive failure.
+						<div class="horizontalDivider10px"></div>
+						<a href="https://www.facebook.com/photo.php?fbid=421669661218444&set=a.421669317885145.108512.260941977291214&type=3&theater" class="printButton" target="_blank">Print</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="horizontalDivider5px"></div>
+				<div class="horizontalDivider570"></div>
+				<div class="tab_BackToTop570"><a href="#top"><img src="/images/tab_BackToTop.png" width="140" height="17" /></a></div>
+				
+				<div class="footer569box">
+					<a href="/index.html" class="a1">HOME</a> |
+					<a href="/who/index.html" class="a1">Who Are We?</a> |
+					<a href="/what/vote.html" class="a1">What Do We Do?</a> |
+					<a href="/why/index.html" class="a1">Why Should You Care?</a> |
+					<a href="/how/index.html" class="a1">How Can You Help?</a> |<br />
+					<a href="http://www.facebook.com/ObamaSuperPac" class="a1" target="_blank">What Do You Think?(Blog)</a>
+					<a href="/how/index.html" class="a1">Donate</a> |
+					<a href="/what/vote.html" class="a1">Ads By Campaign</a>
+				</div>
+				<div class="footer569box2">
+					This is not a Political Action Committee. It is a Presidential Advertising Committee. We are not authorized by any candidate or any candidate's committee.
+					&reg; 2012 Obama SuperPac. All Rights reserved.
+				</div>
+			</div>
+			
+			<div class="content216R">
+				<img src="/images/title216_AdsCampaign.png" width="216" height="47" />
+				<div class="horizontalDivider5px"></div>
+				<a href="/what/vote.html" class="globalVote">Vote</a>
+				<div class="horizontalDivider5px"></div>
+				<a href="/what/mitt.html" class="globalMitt">Mitt</a>
+				<div class="horizontalDivider5px"></div>
+				<a href="/what/tough.html" class="globalJob">Job</a>
+				<div class="horizontalDivider5px"></div>
+				<img src="/images/global_behind_a.png" width="216" height="187" />
+				<div class="horizontalDivider5px"></div>
+				<img src="/images/title216_ShareAd.png" width="216" height="47" />
+				<div class="horizontalDivider5px"></div>
+				<a href="http://www.facebook.com/ObamaSuperPac" target="_blank"><img src="/images/sm_facebook.gif" width="216" height="34" /></a>
+				<div class="horizontalDivider5px"></div>
+				<a href="http://twitter.com/obamasuperpac" target="_blank"><img src="/images/sm_twitter.gif" width="216" height="34" /></a>
+				<div class="horizontalDivider5px"></div>
+				<a href="http://www.youtube.com/ospvideoWorks" target="_blank"><img src="/images/sm_youtube.gif" width="216" height="34" /></a>
+				<div class="horizontalDivider5px"></div>
+				<a href="http://www.linkedin.com/pub/obama-superpac/55/bbb/8a7" target="_blank"><img src="/images/sm_linkedin.gif" width="216" height="34" /></a>
+				<div class="horizontalDivider5px"></div>
+				<a href="http://pinterest.com/obamasuperpac" target="_blank"><img src="/images/sm_pinterest.gif" width="216" height="34" /></a>
+				<div class="horizontalDivider5px"></div>
+				<img src="/images/title216_donate.png" width="216" height="47" />
+				<div class="horizontalDivider5px"></div>
+				<a href="/how/index.html" class="globalWanted">Vote</a>
+			</div>
+		</div>
+		<div class="horizontalDivider15px"></div>
+    </div>
+</div>
+</body>
+</html>

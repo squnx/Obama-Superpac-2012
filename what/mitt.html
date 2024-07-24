@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Help The President Re-Unite America</title>
+<link href="/default.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="/jquery.collapse.css" type="text/css" />
+<!-- jquery core -->
+<script type="text/javascript" src="/js/jquery-1.6.1.min.js"></script>
+<!-- jquery plugins -->
+<!--<script type="text/javascript" src="jquery.cookie.min.js"></script>-->
+<script type="text/javascript" src="/js/jquery.collapsible.min.js"></script>
+<script type="text/javascript" src="/js/highlight.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	hljs.tabReplace = '    ';
+	hljs.initHighlightingOnLoad();
+	//custom animation for open/close
+	$.fn.slideFadeToggle = function(speed, easing, callback) {
+		return this.animate({opacity: 'toggle', height: 'toggle'}, speed, easing, callback);
+	};
+	//collapsible management
+	$('.collapsible').collapsible({
+		defaultOpen: 'section1',
+		cookieName: 'nav',
+		speed: 'slow',
+		animateOpen: function (elem, opts) { //replace the standard slideUp with custom function
+			elem.next().slideFadeToggle(opts.speed);
+		},
+		animateClose: function (elem, opts) { //replace the standard slideDown with custom function
+			elem.next().slideFadeToggle(opts.speed);
+		}
+	});
+	$('.page_collapsible').collapsible({
+		defaultOpen: 'body_section1',
+		cookieName: 'body2',
+		speed: 'slow',
+		animateOpen: function (elem, opts) { //replace the standard slideUp with custom function
+			elem.next().slideFadeToggle(opts.speed);
+		},
+		animateClose: function (elem, opts) { //replace the standard slideDown with custom function
+			elem.next().slideFadeToggle(opts.speed);
+		}
+	});
+	//assign open/close all to functions
+	function openAll() {
+		$('.collapse-close').collapsible('toggle');
+	}
+	function closeAll() {
+		$('.collapse-open').collapsible('toggle');
+	}
+	//listen for close/open all
+	$('#closeAll').click(function(event) {
+		event.preventDefault();
+		closeAll();
+	});
+	$('#openAll').click(function(event) {
+		event.preventDefault();
+		openAll();
+	});
+});
+</script>
+</head>
+
+<body>
+<div class="container">
+	<div class="header"><a href="/index.html"><img src="/images/spacer.gif" width="167" height="167" style="position: relative; top: 28px; left: 603px;" /></a></div>
+	<div class="nav">
+    		<ul id="whatB">
+    			<li id="who"><a href="/who/index.html"></a></li>
+    			<li id="what"><a href="/what/vote.html"></a></li>
+    			<li id="why"><a href="/why/index.html"></a></li>
+    			<li id="how"><a href="/how/index.html"></a></li>
+    			<li id="blog"><a href="http://www.facebook.com/ObamaSuperPac" target="_blank"></a></li>
+    		</ul>
+    </div>
+	<div class="content">
+		<div class="horizontalDivider"></div>
+		<div class="contentDiv">
+			<div class="content574L">
+				<div class="page_collapsible" id="body_section1" style="background-image: url(/images/title569_MittVideo.png);"><span></span></div>			
+				<div>
+					<div class="content569box142H">
+						<div class="content569box260"><img src="/images/video_mitt_smoking.jpg" width="260" height="142" /></div>
+						<div class="content569box261">
+						<span class="font1">The Smoking Gun</span><br />
+						<strong>Campaign</strong>: "Mitt is Not It"<br />
+						<div class="horizontalDivider10px"></div>
+						Mitt Romney accepted $35k from cigarette sources while Mormons reject smoking. Is he true to his convictions?
+						<div class="horizontalDivider10px"></div>
+						<a href="http://www.youtube.com/watch?v=G_qj8hWXPbg&feature=plcp" class="videoButton" target="_blank">Video</a>
+						</div>
+					</div>
+					<div class="content569box142H">
+						<div class="content569box260"><img src="/images/video_mitt_end.jpg" width="260" height="142" /></div>
+						<div class="content569box261">
+						<span class="font1">The End of Hope</span><br />
+						<strong>Campaign</strong>: "Mitt is Not It"<br />
+						<div class="horizontalDivider10px"></div>
+						Mitt Romney intends to put an end to Federal education reform, extinguishing the last light of hope for millions of American children.
+						<div class="horizontalDivider10px"></div>
+						<a href="http://www.youtube.com/watch?v=ZwerGp6BF8o&feature=plcp" class="videoButton" target="_blank">Video</a>
+						</div>
+					</div>
+					<div class="content569box142H">
+						<div class="content569box260"><img src="/images/video_mitt_garden.jpg" width="260" height="142" /></div>
+						<div class="content569box261">
+						<span class="font1">No Garden of Eden</span><br />
+						<strong>Campaign</strong>: "Mitt is Not It"<br />
+						<div class="horizontalDivider10px"></div>
+						The past four years have been no garden of Eden in America. Barack Obama served the needs of the nation. Mitt Romney made money.
+						<div class="horizontalDivider10px"></div>
+						<a href="http://www.youtube.com/watch?v=NRTbJ9C0zu8&feature=plcp" class="videoButton" target="_blank">Video</a>
+						</div>
+					</div>
+					<div class="content569box142H">
+						<div class="content569box260"><img src="/images/video_mitt_two.jpg" width="260" height="142" /></div>
+						<div class="content569box261">
+						<span class="font1">There are Two Americas</span><br />
+						<strong>Campaign</strong>: "Mitt is Not It"<br />
+						<div class="horizontalDivider10px"></div>
+						President Obama has worked hard to help the 99%. Mitt Romney wants to work hard to help the 1%.
+						<div class="horizontalDivider10px"></div>
+						<a href="http://www.youtube.com/watch?v=w9-yNaftZPk&feature=plcp" class="videoButton" target="_blank">Video</a>
+						</div>
+					</div>
+					<div class="content569box142H">
+						<div class="content569box260"><img src="/images/video_mitt_future.jpg" width="260" height="142" /></div>
+						<div class="content569box261">
+						<span class="font1">This is Not Our Future</span><br />
+						<strong>Campaign</strong>: "Mitt is Not It"<br />
+						<div class="horizontalDivider10px"></div>
+						America lags behind in innovation. Yet Mitt Romney supports the firing of our teachers and the return of honor students to their homelands after graduation.
+						<div class="horizontalDivider10px"></div>
+						<a href="http://www.youtube.com/watch?v=B5sKgM7B2WE&feature=plcp" class="videoButton" target="_blank">Video</a>
+						</div>
+					</div>
+					<div class="content569box142H">
+						<div class="content569box260"><img src="/images/video_mitt_raps.jpg" width="260" height="142" /></div>
+						<div class="content569box261">
+						<span class="font1">Obama Raps</span><br />
+						<strong>Campaign</strong>: "Mitt is Not It"<br />
+						<div class="horizontalDivider10px"></div>
+						Obama raps about the issues facing Americans in deciding who will be President in 2012.
+						<div class="horizontalDivider10px"></div>
+						<a href="http://www.youtube.com/watch?v=zxviPR10A_M&feature=plcp" class="videoButton" target="_blank">Video</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="horizontalDivider5px"></div>
+				<div class="page_collapsible" id="body_section2" style="background-image: url(/images/title569_MittPrint.png);"><span></span></div>			
+				<div>
+					<div class="content569box124H">
+						<div class="content569box260"><img src="/images/print_mitt_bank.jpg" width="260" height="124" /></div>
+						<div class="content569box261">
+						<span class="font1">Bank Not Tank</span><br />
+						<strong>Campaign</strong>: "Mitt is Not It"<br />
+						<div class="horizontalDivider10px"></div>
+						Obama saved Americans millions at the gas pump with new fuel economy standards.
+						<div class="horizontalDivider10px"></div>
+						<a href="https://www.facebook.com/photo.php?fbid=419467138105363&set=a.419467098105367.107843.260941977291214&type=1&theater" class="printButton" target="_blank">Print</a>
+						</div>
+					</div>
+					<div class="content569box124H">
+						<div class="content569box260"><img src="/images/print_mitt_wham.jpg" width="260" height="124" /></div>
+						<div class="content569box261">
+						<span class="font1">Wham! Now What?</span><br />
+						<strong>Campaign</strong>: "Mitt is Not It"<br />
+						<div class="horizontalDivider10px"></div>
+						ObamaCare is proving itself day after day. Even to the Supreme Court.
+						<div class="horizontalDivider10px"></div>
+						<a href="https://www.facebook.com/photo.php?fbid=419467188105358&set=a.419467098105367.107843.260941977291214&type=1&theater" class="printButton" target="_blank">Print</a>
+						</div>
+					</div>
+					<div class="content569box124H">
+						<div class="content569box260"><img src="/images/print_mitt_wmd.jpg" width="260" height="124" /></div>
+						<div class="content569box261">
+						<span class="font1">W.M.D.</span><br />
+						<strong>Campaign</strong>: "Mitt is Not It"<br />
+						<div class="horizontalDivider10px"></div>
+						"Don't Ask Don't Tell" abolished as hate crimes in the military are prosecuted.
+						<div class="horizontalDivider10px"></div>
+						<a href="https://www.facebook.com/photo.php?fbid=419467211438689&set=a.419467098105367.107843.260941977291214&type=3&theater" class="printButton" target="_blank">Print</a>
+						</div>
+					</div>
+					<div class="content569box124H">
+						<div class="content569box260"><img src="/images/print_mitt_big.jpg" width="260" height="124" /></div>
+						<div class="content569box261">
+						<span class="font1">Too Big to Fail</span><br />
+						<strong>Campaign</strong>: "Mitt is Not It"<br />
+						<div class="horizontalDivider10px"></div>
+						When the President bailed out the banks, the car companies and Wall Street, he let everyone know it came at a price.
+						<div class="horizontalDivider10px"></div>
+						<a href="https://www.facebook.com/photo.php?fbid=419467164772027&set=a.419467098105367.107843.260941977291214&type=1&theater" class="printButton" target="_blank">Print</a>
+						</div>
+					</div>
+					<div class="content569box124H">
+						<div class="content569box260"><img src="/images/print_mitt_in.jpg" width="260" height="124" /></div>
+						<div class="content569box261">
+						<span class="font1">In or Out?</span><br />
+						<strong>Campaign</strong>: "Mitt is Not It"<br />
+						<div class="horizontalDivider10px"></div>
+						Did Mitt Romney leave Bain in 1999, or was it 2002? Did he lie on his job application for President?
+						<div class="horizontalDivider10px"></div>
+						<a href="https://www.facebook.com/photo.php?fbid=419467498105327&set=a.419467098105367.107843.260941977291214&type=1&theater" class="printButton" target="_blank">Print</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="horizontalDivider5px"></div>
+				<div class="horizontalDivider570"></div>
+				<div class="tab_BackToTop570"><a href="#top"><img src="/images/tab_BackToTop.png" width="140" height="17" /></a></div>
+				
+				<div class="footer569box">
+					<a href="/index.html" class="a1">HOME</a> |
+					<a href="/who/index.html" class="a1">Who Are We?</a> |
+					<a href="/what/vote.html" class="a1">What Do We Do?</a> |
+					<a href="/why/index.html" class="a1">Why Should You Care?</a> |
+					<a href="/how/index.html" class="a1">How Can You Help?</a> |<br />
+					<a href="http://www.facebook.com/ObamaSuperPac" class="a1" target="_blank">What Do You Think?(Blog)</a>
+					<a href="/how/index.html" class="a1">Donate</a> |
+					<a href="/what/vote.html" class="a1">Ads By Campaign</a>
+				</div>
+				<div class="footer569box2">
+					This is not a Political Action Committee. It is a Presidential Advertising Committee. We are not authorized by any candidate or any candidate's committee.
+					&reg; 2012 Obama SuperPac. All Rights reserved.
+				</div>
+			</div>
+			
+			<div class="content216R">
+				<img src="/images/title216_AdsCampaign.png" width="216" height="47" />
+				<div class="horizontalDivider5px"></div>
+				<a href="/what/vote.html" class="globalVote">Vote</a>
+				<div class="horizontalDivider5px"></div>
+				<img src="/images/global_mitt_a.png" width="216" height="187" />
+				<div class="horizontalDivider5px"></div>
+				<a href="/what/tough.html" class="globalJob">Tough</a>
+				<div class="horizontalDivider5px"></div>
+				<a href="/what/behind.html" class="globalBehind">Behind</a>
+				<div class="horizontalDivider5px"></div>
+				<img src="/images/title216_ShareAd.png" width="216" height="47" />
+				<div class="horizontalDivider5px"></div>
+				<a href="http://www.facebook.com/ObamaSuperPac" target="_blank"><img src="/images/sm_facebook.gif" width="216" height="34" /></a>
+				<div class="horizontalDivider5px"></div>
+				<a href="http://twitter.com/obamasuperpac" target="_blank"><img src="/images/sm_twitter.gif" width="216" height="34" /></a>
+				<div class="horizontalDivider5px"></div>
+				<a href="http://www.youtube.com/ospvideoWorks" target="_blank"><img src="/images/sm_youtube.gif" width="216" height="34" /></a>
+				<div class="horizontalDivider5px"></div>
+				<a href="http://www.linkedin.com/pub/obama-superpac/55/bbb/8a7" target="_blank"><img src="/images/sm_linkedin.gif" width="216" height="34" /></a>
+				<div class="horizontalDivider5px"></div>
+				<a href="http://pinterest.com/obamasuperpac" target="_blank"><img src="/images/sm_pinterest.gif" width="216" height="34" /></a>
+				<div class="horizontalDivider5px"></div>
+				<img src="/images/title216_donate.png" width="216" height="47" />
+				<div class="horizontalDivider5px"></div>
+				<a href="/how/index.html" class="globalWanted">Vote</a>
+			</div>
+		</div>
+		<div class="horizontalDivider15px"></div>
+    </div>
+</div>
+</body>
+</html>

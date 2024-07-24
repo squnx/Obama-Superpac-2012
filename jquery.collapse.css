@@ -1,0 +1,45 @@
+@CHARSET "UTF-8";
+
+.collapsible,
+.page_collapsible,
+.accordion {
+	margin: 0;
+    height:47px;
+	font-family: Arial, Helvetica, sans-serif;
+    text-decoration:none;
+    text-transform:uppercase;
+    color: #000;
+    font-size:1em;
+}
+.accordion-open,
+.collapse-open {
+	color: #fff;
+}
+.accordion-open span,
+.collapse-open span {
+	display:block;
+	float:right;
+	padding:10px;
+}
+.accordion-open span,
+.collapse-open span {
+	background:url(/images/button_close.png) center center no-repeat;
+	width:168px;
+	position:relative;
+	top:27px;
+	right:14px;
+}
+.accordion-close span,
+.collapse-close span {
+	display:block;
+	float:right;
+	background:url(/images/button_all.png) center center no-repeat;
+	width:168px;
+	position:relative;
+	top:27px;
+	right:14px;
+	padding:10px;
+}
+code {
+	overflow:auto;
+}

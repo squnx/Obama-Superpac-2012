@@ -1,0 +1,428 @@
+@charset "utf-8";
+body {
+	font: 100%/1.4 Arial, Verdana, Helvetica, sans-serif;
+	color: #000044;
+	background: #000f42;
+	margin: 0;
+	padding: 0;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #badaeb;
+	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #badaeb;
+	text-decoration: none;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	color: #fff;
+	text-decoration: none;
+}
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	width: 800px;
+	background: #badaeb;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background-image: url(images/bg_header.gif);
+	width: 800px;
+	height: 218px;
+}
+.nav {
+	padding: 5px 0;
+}
+ul#homeB {
+    background: url(images/nav-sprite.gif) no-repeat;
+    width: 800px;
+    height: 81px;
+	padding: 0 5px;
+    list-style: none;
+}
+ul#whoB {
+    background: url(images/nav-sprite0.gif) no-repeat;
+    width: 800px;
+    height: 81px;
+	padding: 0 5px;
+    list-style: none;
+}
+ul#whatB {
+    background: url(images/nav-sprite0.gif) 0 -81px;
+    width: 800px;
+    height: 81px;
+	padding: 0 5px;
+    list-style: none;
+}
+ul#whyB {
+    background: url(images/nav-sprite0.gif) 0 -162px;
+    width: 800px;
+    height: 81px;
+	padding: 0 5px;
+    list-style: none;
+}
+ul#howB {
+    background: url(images/nav-sprite0.gif) 0 -243px;
+    width: 800px;
+    height: 81px;
+	padding: 0 5px;
+    list-style: none;
+}
+li a {
+    display: block;
+    width: 154px;
+    height: 81px;
+	margin-right: 5px;
+    text-indent: -999px;
+    float: left;
+}
+li#who a:hover, li#who a:active {
+    background: url(images/nav-sprite.gif) -5px -81px;
+}
+li#what a:hover, li#what a:active {
+    background: url(images/nav-sprite.gif) -164px -81px;
+}
+li#why a:hover, li#why a:active {
+    background: url(images/nav-sprite.gif) -323px -81px;
+}
+li#how a:hover, li#how a:active {
+    background: url(images/nav-sprite.gif) -482px -81px;
+}
+li#blog a:hover, li#blog a:active {
+    background: url(images/nav-sprite.gif) -641px -81px;
+}
+/* ~~ This is the layout information. ~~ */
+.content {
+	padding: 20px 5px 0 5px;
+	font-family: Arial;
+    font-size: 12px;
+}
+.contentDiv {
+	width: 790px;
+}
+.content574L {
+	float: left;
+	width: 569px;
+	padding: 5px 5px 5px 0;
+}
+.content569box {
+	margin-top: 5px;
+	padding: 23px 24px;
+	background: #fff;
+	clear: both;
+}
+.content569box141H {
+	margin-top: 5px;
+	padding: 23px 24px;
+	height: 141px;
+	background: #fff;
+}
+.content569box142H {
+	margin-top: 5px;
+	padding: 23px 24px;
+	height: 142px;
+	background: #fff;
+}
+.content569box124H {
+	margin-top: 5px;
+	padding: 23px 24px;
+	height: 124px;
+	background: #fff;
+}
+.content569box260 {
+	float: left;
+	width: 260px;
+}
+.content569box261 {
+	float: right;
+	padding-left: 24px;
+	width: 237px;
+	background: #fff;
+}
+.contentBox570 {
+	margin-top: 5px;
+	padding: 21px 25px;
+	background: #fff;
+}
+.content216R {
+	float: right;
+	width: 216px;
+	padding: 5px 0 5px 0;
+}
+.content575L {
+	clear: left;
+	float: left;
+	width: 570px;
+	padding: 5px 5px 5px 0;
+}
+.content215R {
+	float: right;
+	width: 215px;
+	padding: 5px 0 5px 0;
+}
+.content3col288L {
+	clear: left;
+	float: left;
+	width: 283px;
+	padding: 0 5px 5px 0;
+	background: url(images/tab_LatestTwitter.png) no-repeat;
+}
+.content3col288Lbox {
+	margin-top: 5px;
+	padding: 23px 24px;
+	height: 105px;
+	color: #fff;
+	background: #0d4e96;
+}
+.content3col286 {
+	width: 281px;
+	float: left;
+	padding: 0 5px 5px 0;
+	background: url(images/tab_LatestBlog.png) no-repeat;
+}
+.content3col216box {
+	margin-top: 5px;
+	padding: 23px 24px;
+	color: #fff;
+	background: #0d4e96;
+}
+.content3col216R {
+	float: right;
+	width: 216px;
+	padding: 0 0 5px 0;
+	background: url(images/tab_FindUs.png) no-repeat;
+}
+.content3col216Rbox {
+	padding: 0 22px;
+	width: 216px;
+	height: 34px;
+	display:table-cell;
+	vertical-align:middle;
+	color: #fff;
+	background: #0d4e96;
+}
+.content h1 {
+	padding-left: 0;
+	font-size: 16px;
+	font-weight: bold;
+}
+.content p {
+	padding-left: 0;
+}
+.horizontalDivider {
+	width: 790px;
+	height: 5px;
+	background: #0d4e96;
+	clear: both;
+}
+.horizontalDivider570 {
+	width: 570px;
+	height: 5px;
+	background: #0d4e96;
+	clear: both;
+}
+.horizontalDivider5px {
+	height: 5px;
+}
+.horizontalDivider10px {
+	height: 10px;
+}
+.horizontalDivider15px {
+	height: 10px;
+	clear: both;
+}
+.tab_BackToTop {
+	width: 790px;
+	height: 22px;
+	text-align:center;
+}
+.tab_BackToTop570 {
+	width: 570px;
+	height: 22px;
+	text-align:center;
+}
+.font1 {
+	font-size: 16px;
+	font-weight: bold;
+}
+.li {
+	margin-left: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+/* ~~ The rollover images ~~ */
+.videoButton {
+	display: block;
+	float:right;
+	width: 168px;
+	height: 22px;
+	background: url('/images/button_watch.gif');
+	text-indent: -99999px;
+}
+.videoButton:hover {
+	background: url('/images/button_watch_o.gif');
+}
+.videoButton:active {
+	background: url('/images/button_watch_c.gif');
+}
+.printButton {
+	display: block;
+	float:right;
+	width: 168px;
+	height: 22px;
+	background: url('/images/button_view.gif');
+	text-indent: -99999px;
+}
+.printButton:hover {
+	background: url('/images/button_view_o.gif');
+}
+.printButton:active {
+	background: url('/images/button_view_c.gif');
+}
+.donateButton {
+	display: block;
+	position: relative;
+	top: -8px;
+	float:right;
+	width: 168px;
+	height: 22px;
+	background: url('/images/button_donate.gif');
+	text-indent: -99999px;
+}
+.donateButton:hover {
+	background: url('/images/button_donate_o.gif');
+}
+.donateButton:active {
+	background: url('/images/button_donate_c.gif');
+}
+.globalVote {
+	display: block;
+	width: 216px;
+	height: 187px;
+	background: url('/images/global_vote.png');
+	text-indent: -99999px;
+}
+.globalVote:hover {
+	background: url('/images/global_search.png');
+}
+.globalVote:active {
+	background: url('/images/global_search_c.png');
+}
+.globalMitt {
+	display: block;
+	width: 216px;
+	height: 187px;
+	background: url('/images/global_mitt.png');
+	text-indent: -99999px;
+}
+.globalMitt:hover {
+	background: url('/images/global_search.png');
+}
+.globalMitt:active {
+	background: url('/images/global_search_c.png');
+}
+.globalJob {
+	display: block;
+	width: 216px;
+	height: 187px;
+	background: url('/images/global_job.png');
+	text-indent: -99999px;
+}
+.globalJob:hover {
+	background: url('/images/global_search.png');
+}
+.globalJob:active {
+	background: url('/images/global_search_c.png');
+}
+.globalBehind {
+	display: block;
+	width: 216px;
+	height: 187px;
+	background: url('/images/global_behind.png');
+	text-indent: -99999px;
+}
+.globalBehind:hover {
+	background: url('/images/global_search.png');
+}
+.globalBehind:active {
+	background: url('/images/global_search_c.png');
+}
+.globalWanted {
+	display: block;
+	width: 216px;
+	height: 208px;
+	background: url('/images/global_wanted.png');
+	text-indent: -99999px;
+}
+.globalWanted:hover {
+	background: url('/images/global_wanted_o.png');
+}
+.globalWanted:active {
+	background: url('/images/global_wanted_c.png');
+}
+/* ~~ The footer ~~ */
+.footer {
+	padding: 15px 30px;
+    font-size: 12px;
+	font-weight:bold;
+	line-height: 20px;
+}
+.footer2 {
+	padding: 0 30px 20px 30px;
+    font-size: 9px;
+	line-height: 14px;
+}
+.footer569box {
+	padding: 15px 24px;
+    font-size: 12px;
+	font-weight:bold;
+	line-height: 20px;
+}
+.footer569box2 {
+	padding: 0 24px 20px 24px;
+    font-size: 9px;
+	line-height: 14px;
+}
+a.a1:link {
+	color: #000044;
+	text-decoration: none;
+}
+a.a1:visited {
+	color: #000044;
+	text-decoration: none;
+}
+a.a1:hover, a:active, a:focus {
+	color: #0d4e96;
+	text-decoration: none;
+}
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
